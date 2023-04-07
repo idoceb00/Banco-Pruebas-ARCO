@@ -23,11 +23,13 @@ public:
 private slots:
     void on_origenButton_clicked();
 
+    void on_destinoButton_clicked();
+
 private:
     Ui::ordenarPalabrasWindow *ui;
 
-    string rutaOrigen;
-    string rutaDestino;
+    QString rutaOrigen;
+    QString rutaDestino;
 };
 
 #endif // ORDENARPALABRASWINDOW_H
