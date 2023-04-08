@@ -18,6 +18,7 @@ HEADERS += \
     ordenarpalabraswindow.h
 
 FORMS += \
+    giroImagen.ui \
     mainwindow.ui \
     ordenarpalabraswindow.ui
 
