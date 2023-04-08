@@ -1,4 +1,5 @@
 #include "mainwindow.h"
+#include "giroimagenwindow.h"
 #include "ui_mainwindow.h"
 
 MainWindow::MainWindow(QWidget *parent)
@@ -24,6 +25,9 @@ void MainWindow::on_ordenarPalabras_clicked()
 
 void MainWindow::on_pushButton_2_clicked()
 {
+    giroImagenWindow *x = new giroImagenWindow();
+
+    x->show();
 
 }
 
