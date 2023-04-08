@@ -20,6 +20,9 @@ private slots:
 
 private:
     Ui::giroImagenWindow *ui;
+
+    QString origen;
+    QString destino;
 };
 
 #endif // GIROIMAGENWINDOW_H

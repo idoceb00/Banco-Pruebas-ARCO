@@ -17,8 +17,8 @@ giroImagenWindow::~giroImagenWindow()
 
 void giroImagenWindow::on_pushButton_2_clicked()
 {
-    QString origen = QFileDialog::getExistingDirectory(this, "Elige el directorio de las imagenes");
-    QString destino = QFileDialog::getExistingDirectory(this, "Elige el destino");
+    origen = QFileDialog::getExistingDirectory(this, "Elige el directorio de las imagenes");
+    destino = QFileDialog::getExistingDirectory(this, "Elige el destino");
 
 }
 
