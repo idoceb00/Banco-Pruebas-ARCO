@@ -15,10 +15,9 @@ giroImagenWindow::~giroImagenWindow()
     delete ui;
 }
 
-void giroImagenWindow::on_pushButton_2_clicked()
+void giroImagenWindow::on_directories_button_clicked()
 {
     origen = QFileDialog::getExistingDirectory(this, "Elige el directorio de las imagenes");
     destino = QFileDialog::getExistingDirectory(this, "Elige el destino");
-
 }
 

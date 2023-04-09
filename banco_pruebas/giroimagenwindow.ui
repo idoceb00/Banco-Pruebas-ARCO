@@ -55,7 +55,7 @@
     </widget>
    </item>
    <item row="9" column="0">
-    <widget class="QPushButton" name="pushButton_2">
+    <widget class="QPushButton" name="directories_button">
      <property name="text">
       <string>Seleccionar directorios</string>
      </property>

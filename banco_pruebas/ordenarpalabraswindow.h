@@ -4,6 +4,9 @@
 #include <QMainWindow>
 #include <QFileDialog>
 #include <iostream>
+#include <QFile>
+#include <QMessageBox>
+#include <QTextStream>
 
 using namespace std;
 
@@ -27,6 +30,8 @@ private slots:
 
 private:
     Ui::ordenarPalabrasWindow *ui;
+
+    vector<QString> words;
 
     QString rutaOrigen;
     QString rutaDestino;

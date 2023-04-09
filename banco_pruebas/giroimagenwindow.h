@@ -2,6 +2,7 @@
 #define GIROIMAGENWINDOW_H
 
 #include <QWidget>
+#include <QFileDialog>
 
 namespace Ui {
 class giroImagenWindow;
@@ -16,7 +17,8 @@ public:
     ~giroImagenWindow();
 
 private slots:
-    void on_pushButton_2_clicked();
+
+    void on_directories_button_clicked();
 
 private:
     Ui::giroImagenWindow *ui;

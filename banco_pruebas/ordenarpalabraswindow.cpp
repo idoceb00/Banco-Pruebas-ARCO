@@ -20,8 +20,21 @@ void ordenarPalabrasWindow::on_origenButton_clicked()
     this->rutaOrigen = x.getOpenFileName(this, "ordenarPalabrasWindow");
 
     this->ui->origenLineEdit->setText(this->rutaOrigen);
-}
 
+    QFile file(rutaOrigen);
+    if(!file.open(QIODevice::ReadWrite))
+        QMessageBox::information(0, "error", file.errorString());
+
+    QTextStream in(&file);
+
+    while(!in.atEnd()){
+        QString line = in.readLine();
+        words.push_back(line);
+    }
+
+    file.close();
+
+}
 
 void ordenarPalabrasWindow::on_destinoButton_clicked()
 {
