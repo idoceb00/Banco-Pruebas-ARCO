@@ -28,6 +28,8 @@ private slots:
 
     void on_destinoButton_clicked();
 
+    void on_ejecutar_button_clicked();
+
 private:
     Ui::ordenarPalabrasWindow *ui;
 
