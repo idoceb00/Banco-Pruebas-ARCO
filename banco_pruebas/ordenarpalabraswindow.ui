@@ -242,9 +242,15 @@
      <x>0</x>
      <y>0</y>
      <width>800</width>
-     <height>34</height>
+     <height>22</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menuORDENAR_PALABRAS_ALFABETICAMENTE">
+    <property name="title">
+     <string>ORDENAR PALABRAS ALFABETICAMENTE</string>
+    </property>
+   </widget>
+   <addaction name="menuORDENAR_PALABRAS_ALFABETICAMENTE"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>

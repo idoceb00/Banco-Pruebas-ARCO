@@ -21,3 +21,15 @@ void giroImagenWindow::on_directories_button_clicked()
     destino = QFileDialog::getExistingDirectory(this, "Elige el destino");
 }
 
+
+void giroImagenWindow::on_pushButton_clicked()
+{
+
+}
+
+
+void giroImagenWindow::on_pushButton_3_clicked()
+{
+
+}
+
