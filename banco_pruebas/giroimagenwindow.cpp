@@ -17,16 +17,19 @@ giroImagenWindow::~giroImagenWindow()
 
 void giroImagenWindow::on_seleccionarDirectButton_clicked()
 {
-    origen = QFileDialog::getExistingDirectory(this, "Elige el directorio de las imagenes");
-    destino = QFileDialog::getExistingDirectory(this, "Elige el destino");
+    this->origen = QFileDialog::getExistingDirectory(this, "Elige el directorio de las imagenes");
+    this->destino = QFileDialog::getExistingDirectory(this, "Elige el destino");
 
-    ui->Origen_lineEdit->setText(origen);
-    ui->Destino_lineEdit->setText(destino);
+    this->ui->Origen_lineEdit->setText(origen);
+    this->ui->Destino_lineEdit->setText(destino);
 }
 
 void giroImagenWindow::on_ejecutarButton_clicked()
 {
-    std::vector<double> tiempos;
+    vector<double> tiempos;
+
+    QDir dir(this->origen);
+    QFileInfoList list = dir.entryInfoList();
 
     clock_t inicio;
     clock_t fin;
@@ -36,7 +39,21 @@ void giroImagenWindow::on_ejecutarButton_clicked()
     for(int i = 0; i < 5; i++){
         inicio = clock();
 
+        for(int j = 0; j < list.size();j++){
+            QFileInfo ruta = list.at(j);
 
+            if((ruta.fileName().indexOf(".jpg") != -1) || (ruta.fileName().indexOf(".png") != -1) || (ruta.fileName().indexOf(".jpeg") != -1)){
+                QImage image(ruta.filePath());
+
+                QMatrix matrix;
+
+                matrix.rotate(180);
+
+                QImage rotatedImage = image.transformed(matrix);
+
+                rotatedImage.save(this->destino + "/" +ruta.fileName());
+            }
+        }
 
         fin = clock();
 

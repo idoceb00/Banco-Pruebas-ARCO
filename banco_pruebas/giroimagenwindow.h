@@ -5,6 +5,10 @@
 #include <QFileDialog>
 #include <time.h>
 #include <vector>
+#include <iostream>
+#include <QDir>
+
+using namespace std;
 
 namespace Ui {
 class giroImagenWindow;
