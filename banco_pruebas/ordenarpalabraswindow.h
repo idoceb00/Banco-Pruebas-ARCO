@@ -7,6 +7,7 @@
 #include <QFile>
 #include <QMessageBox>
 #include <QTextStream>
+#include <time.h>
 
 using namespace std;
 

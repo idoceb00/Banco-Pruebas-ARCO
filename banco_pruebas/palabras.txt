@@ -1,0 +1,10 @@
+nacho
+alex
+juan
+mesa
+ordenador
+cuadro
+silla
+perro
+gato
+
