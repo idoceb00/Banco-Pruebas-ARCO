@@ -3,6 +3,8 @@
 
 #include <QWidget>
 #include <QFileDialog>
+#include <time.h>
+#include <vector>
 
 namespace Ui {
 class giroImagenWindow;
@@ -18,11 +20,11 @@ public:
 
 private slots:
 
-    void on_directories_button_clicked();
+    void on_ejecutarButton_clicked();
 
-    void on_pushButton_clicked();
+    void on_resetButton_clicked();
 
-    void on_pushButton_3_clicked();
+    void on_seleccionarDirectButton_clicked();
 
 private:
     Ui::giroImagenWindow *ui;

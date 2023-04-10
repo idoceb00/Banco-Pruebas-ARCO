@@ -15,14 +15,14 @@
   </property>
   <layout class="QGridLayout" name="gridLayout">
    <item row="9" column="0">
-    <widget class="QPushButton" name="directories_button">
+    <widget class="QPushButton" name="seleccionarDirectButton">
      <property name="text">
       <string>Seleccionar directorios</string>
      </property>
     </widget>
    </item>
    <item row="5" column="1">
-    <widget class="QLineEdit" name="lineEdit_4">
+    <widget class="QLineEdit" name="time4">
      <property name="sizePolicy">
       <sizepolicy hsizetype="Fixed" vsizetype="Maximum">
        <horstretch>0</horstretch>
@@ -35,7 +35,7 @@
     </widget>
    </item>
    <item row="12" column="0" colspan="2">
-    <widget class="QPushButton" name="pushButton_3">
+    <widget class="QPushButton" name="resetButton">
      <property name="text">
       <string>Reset</string>
      </property>
@@ -49,7 +49,7 @@
     </widget>
    </item>
    <item row="2" column="1">
-    <widget class="QLineEdit" name="lineEdit_2">
+    <widget class="QLineEdit" name="time2">
      <property name="sizePolicy">
       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
        <horstretch>0</horstretch>
@@ -116,7 +116,7 @@
     </widget>
    </item>
    <item row="3" column="1">
-    <widget class="QLineEdit" name="lineEdit_3">
+    <widget class="QLineEdit" name="time3">
      <property name="sizePolicy">
       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
        <horstretch>0</horstretch>
@@ -143,7 +143,7 @@
     </widget>
    </item>
    <item row="6" column="1">
-    <widget class="QLineEdit" name="lineEdit_5">
+    <widget class="QLineEdit" name="time5">
      <property name="sizePolicy">
       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
        <horstretch>0</horstretch>
@@ -170,14 +170,14 @@
     </widget>
    </item>
    <item row="9" column="1">
-    <widget class="QPushButton" name="pushButton">
+    <widget class="QPushButton" name="ejecutarButton">
      <property name="text">
       <string>Ejecutar</string>
      </property>
     </widget>
    </item>
    <item row="1" column="1">
-    <widget class="QLineEdit" name="lineEdit">
+    <widget class="QLineEdit" name="time1">
      <property name="sizePolicy">
       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
        <horstretch>0</horstretch>
@@ -190,7 +190,7 @@
     </widget>
    </item>
    <item row="7" column="1">
-    <widget class="QLineEdit" name="lineEdit_6">
+    <widget class="QLineEdit" name="timeMedia">
      <property name="sizePolicy">
       <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
        <horstretch>0</horstretch>
