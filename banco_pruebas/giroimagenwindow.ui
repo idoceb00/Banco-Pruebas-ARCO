@@ -14,36 +14,10 @@
    <string>Form</string>
   </property>
   <layout class="QGridLayout" name="gridLayout">
-   <item row="3" column="0">
-    <widget class="QLabel" name="label_4">
+   <item row="9" column="0">
+    <widget class="QPushButton" name="directories_button">
      <property name="text">
-      <string>Tiempo 3 </string>
-     </property>
-    </widget>
-   </item>
-   <item row="5" column="0">
-    <widget class="QLabel" name="label_5">
-     <property name="sizePolicy">
-      <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
-       <horstretch>0</horstretch>
-       <verstretch>0</verstretch>
-      </sizepolicy>
-     </property>
-     <property name="text">
-      <string>Tiempo 4</string>
-     </property>
-    </widget>
-   </item>
-   <item row="6" column="1">
-    <widget class="QLineEdit" name="lineEdit_5">
-     <property name="sizePolicy">
-      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-       <horstretch>0</horstretch>
-       <verstretch>0</verstretch>
-      </sizepolicy>
-     </property>
-     <property name="readOnly">
-      <bool>true</bool>
+      <string>Seleccionar directorios</string>
      </property>
     </widget>
    </item>
@@ -60,6 +34,20 @@
      </property>
     </widget>
    </item>
+   <item row="12" column="0" colspan="2">
+    <widget class="QPushButton" name="pushButton_3">
+     <property name="text">
+      <string>Reset</string>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="0">
+    <widget class="QLabel" name="label_9">
+     <property name="text">
+      <string>Media</string>
+     </property>
+    </widget>
+   </item>
    <item row="2" column="1">
     <widget class="QLineEdit" name="lineEdit_2">
      <property name="sizePolicy">
@@ -73,46 +61,6 @@
      </property>
     </widget>
    </item>
-   <item row="3" column="1">
-    <widget class="QLineEdit" name="lineEdit_3">
-     <property name="sizePolicy">
-      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-       <horstretch>0</horstretch>
-       <verstretch>0</verstretch>
-      </sizepolicy>
-     </property>
-     <property name="readOnly">
-      <bool>true</bool>
-     </property>
-    </widget>
-   </item>
-   <item row="12" column="0" colspan="2">
-    <widget class="QPushButton" name="pushButton_3">
-     <property name="text">
-      <string>Reset</string>
-     </property>
-    </widget>
-   </item>
-   <item row="1" column="1">
-    <widget class="QLineEdit" name="lineEdit">
-     <property name="sizePolicy">
-      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-       <horstretch>0</horstretch>
-       <verstretch>0</verstretch>
-      </sizepolicy>
-     </property>
-     <property name="readOnly">
-      <bool>true</bool>
-     </property>
-    </widget>
-   </item>
-   <item row="9" column="1">
-    <widget class="QPushButton" name="pushButton">
-     <property name="text">
-      <string>Ejecutar</string>
-     </property>
-    </widget>
-   </item>
    <item row="10" column="0">
     <widget class="QLabel" name="label_7">
      <property name="text">
@@ -120,10 +68,24 @@
      </property>
     </widget>
    </item>
-   <item row="9" column="0">
-    <widget class="QPushButton" name="directories_button">
+   <item row="3" column="0">
+    <widget class="QLabel" name="label_4">
      <property name="text">
-      <string>Seleccionar directorios</string>
+      <string>Tiempo 3 </string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="0">
+    <widget class="QLabel" name="label_6">
+     <property name="text">
+      <string>Tiempo 5</string>
+     </property>
+    </widget>
+   </item>
+   <item row="11" column="0">
+    <widget class="QLabel" name="label_8">
+     <property name="text">
+      <string>Destino</string>
      </property>
     </widget>
    </item>
@@ -140,17 +102,29 @@
      </property>
     </widget>
    </item>
-   <item row="2" column="0">
-    <widget class="QLabel" name="label_3">
+   <item row="5" column="0">
+    <widget class="QLabel" name="label_5">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
      <property name="text">
-      <string>Tiempo 2</string>
+      <string>Tiempo 4</string>
      </property>
     </widget>
    </item>
-   <item row="6" column="0">
-    <widget class="QLabel" name="label_6">
-     <property name="text">
-      <string>Tiempo 5</string>
+   <item row="3" column="1">
+    <widget class="QLineEdit" name="lineEdit_3">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
      </property>
     </widget>
    </item>
@@ -161,13 +135,6 @@
      </property>
     </widget>
    </item>
-   <item row="11" column="0">
-    <widget class="QLabel" name="label_8">
-     <property name="text">
-      <string>Destino</string>
-     </property>
-    </widget>
-   </item>
    <item row="10" column="1">
     <widget class="QLineEdit" name="Origen_lineEdit">
      <property name="readOnly">
@@ -175,8 +142,61 @@
      </property>
     </widget>
    </item>
+   <item row="6" column="1">
+    <widget class="QLineEdit" name="lineEdit_5">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QLabel" name="label_3">
+     <property name="text">
+      <string>Tiempo 2</string>
+     </property>
+    </widget>
+   </item>
    <item row="11" column="1">
     <widget class="QLineEdit" name="Destino_lineEdit">
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="9" column="1">
+    <widget class="QPushButton" name="pushButton">
+     <property name="text">
+      <string>Ejecutar</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="QLineEdit" name="lineEdit">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="1">
+    <widget class="QLineEdit" name="lineEdit_6">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
      <property name="readOnly">
       <bool>true</bool>
      </property>
