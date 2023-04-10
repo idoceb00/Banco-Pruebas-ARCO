@@ -19,6 +19,9 @@ void giroImagenWindow::on_directories_button_clicked()
 {
     origen = QFileDialog::getExistingDirectory(this, "Elige el directorio de las imagenes");
     destino = QFileDialog::getExistingDirectory(this, "Elige el destino");
+
+    ui->Origen_lineEdit->setText(origen);
+    ui->Destino_lineEdit->setText(destino);
 }
 
 
