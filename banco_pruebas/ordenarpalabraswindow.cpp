@@ -83,15 +83,15 @@ void ordenarPalabrasWindow::on_ejecutar_button_clicked()
     }
 
     //Multiplico por 1000 para pasarlo a milisegundos
-    this->ui->time1->setText(QString::number(tiempos[0] * 1000));
-    this->ui->time2->setText(QString::number(tiempos[1] * 1000));
-    this->ui->time3->setText(QString::number(tiempos[2] * 1000));
-    this->ui->time4->setText(QString::number(tiempos[3] * 1000));
-    this->ui->time5->setText(QString::number(tiempos[4] * 1000));
+    this->ui->time1->setText(QString::number(tiempos[0] * 1000)+ " ms");
+    this->ui->time2->setText(QString::number(tiempos[1] * 1000)+ " ms");
+    this->ui->time3->setText(QString::number(tiempos[2] * 1000)+ " ms");
+    this->ui->time4->setText(QString::number(tiempos[3] * 1000)+ " ms");
+    this->ui->time5->setText(QString::number(tiempos[4] * 1000)+ " ms");
 
     media = media/5;
 
-    this->ui->timeMedia->setText(QString::number(media * 1000));
+    this->ui->timeMedia->setText(QString::number(media * 1000)+ " ms");
 
 }
 
